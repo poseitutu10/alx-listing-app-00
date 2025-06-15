@@ -363,22 +363,22 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
   },
 ];
 
-
-
-
-
-
 export const footerDetails: FooterDetails[] = [
   {
     name: "Explore",
-    details: ["Apartments in Dubai", "Hotels in New York", "Villa in Spain", "Mansion in Indonesia"]
-  }, 
+    details: [
+      "Apartments in Dubai",
+      "Hotels in New York",
+      "Villa in Spain",
+      "Mansion in Indonesia",
+    ],
+  },
   {
     name: "Company",
-    details: ["About us", "Blog", "Career", "Customers", "Brand"]
-  }, 
+    details: ["About us", "Blog", "Career", "Customers", "Brand"],
+  },
   {
     name: "Help",
-    details: ["Support", "Cancel booking", "Refunds Process"]
-  }
-]
+    details: ["Support", "Cancel booking", "Refunds Process"],
+  },
+];

@@ -5,6 +5,7 @@ import { PROPERTYLISTINGSAMPLE } from "@/constants";
 import Pill from "@/components/common/Pill";
 import { useSelector } from "react-redux";
 import { RootState } from "@/store/store";
+import Link from "next/link";
 
 const Home = () => {
   const category = useSelector((state: RootState) => state.pill.value);
@@ -46,16 +47,18 @@ const Home = () => {
             key: number
           ) => {
             return (
-              <PropertyCard
-                name={name}
-                address={address}
-                rating={rating}
-                category={category}
-                price={price}
-                image={image}
-                discount={discount}
-                offers={offers}
-              />
+              <Link href={`/property/${name}`}>
+                <PropertyCard
+                  name={name}
+                  address={address}
+                  rating={rating}
+                  category={category}
+                  price={price}
+                  image={image}
+                  discount={discount}
+                  offers={offers}
+                />
+              </Link>
             );
           }
         )}
